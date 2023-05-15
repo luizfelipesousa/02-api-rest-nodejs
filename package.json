@@ -8,7 +8,8 @@
     "knex": "knex",
     "knex:rollback": "knex migrate:rollback --all",
     "knex:latest": "knex migrate:latest",
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsup ./src --out-dir build"
   },
   "keywords": [],
   "author": "",
