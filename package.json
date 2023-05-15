@@ -12,7 +12,7 @@
     "knex:rollback": "knex migrate:rollback --all",
     "knex:latest": "knex migrate:latest",
     "test": "vitest",
-    "build": "tsup ./src --out-dir build"
+    "build": "tsup src --out-dir build"
   },
   "keywords": [],
   "author": "",
