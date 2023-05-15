@@ -1,4 +1,4 @@
-# Requisitos Funcionais(RF)
+## Requisitos Funcionais(RF)
 
 - [x] O usuário deve poder criar uma conta;
 - [x] O usuário deve poder obter um extrato da sua conta;
