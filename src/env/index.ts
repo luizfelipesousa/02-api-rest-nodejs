@@ -10,8 +10,13 @@ if (process.env.NODE_ENV == "test") {
 const schema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]).default("production"),
   DATABASE_CLIENT: z.enum(["sqlite", "pg"]),
-  DATABASE_URL: z.string().nonempty(),
+  DATABASE_URL: z.string(),
   PORT: z.coerce.number().default(3333),
+  DATABASE_HOST: z.string(),
+  DATABASE_PORT: z.coerce.number().default(5432),
+  DATABASE_USER: z.string(),
+  DATABASE_PASSWORD: z.string(),
+  DATABASE_NAME: z.string(),
 });
 
 const _env = schema.safeParse(process.env);
